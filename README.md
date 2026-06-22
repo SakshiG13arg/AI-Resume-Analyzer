@@ -1,6 +1,8 @@
 # 🚀 AI Career Assistant
 
-An AI-powered web application that analyzes resumes, provides personalized career guidance using Gemini AI, and recommends suitable job roles based on skills and resume content.
+An AI-powered Career Guidance Platform that helps users analyze resumes, identify skill gaps, match resumes with job descriptions, generate personalized career roadmaps, practice interviews, and create AI-generated cover letters.
+
+Built using Python, Streamlit, Machine Learning, NLP, and Gemini AI.
 
 ---
 
@@ -8,50 +10,138 @@ An AI-powered web application that analyzes resumes, provides personalized caree
 
 ## 📄 Resume Analysis
 
-- Upload resume in PDF format
-- Extract resume text automatically
-- Detect relevant technical skills
+- Upload resumes in PDF format
+- Automatic resume text extraction
+- Technical skill detection
 - Resume scoring system
 - Resume improvement suggestions
-- Keyword detection
+- Keyword analysis
+
+---
 
 ## 🤖 AI Career Chatbot
 
 - Personalized career guidance
-- AI-powered resume feedback
+- Resume feedback
+- Internship recommendations
 - Project suggestions
-- Skill roadmap recommendations
-- Internship and interview guidance
+- Career planning assistance
+- AI-powered question answering
+
+---
 
 ## 💼 Job Recommendation System
 
 - Recommends suitable job roles
-- Match score for each role
-- ML-based recommendation engine
-- Uses TF-IDF and cosine similarity
+- Resume-to-job matching
+- TF-IDF based similarity scoring
+- Match percentage for each role
+
+---
+
+## 🎯 Job Description Matcher
+
+Compare your resume against a Job Description.
+
+Features:
+
+- Resume-JD match score
+- Missing skill detection
+- ATS-style resume analysis
+- Improvement suggestions
+
+---
+
+## 📚 Skill Gap Analyzer
+
+Analyze the gap between your current skills and target role requirements.
+
+Features:
+
+- Missing skills identification
+- Skill comparison
+- Learning priority recommendations
+
+---
+
+## 🗺️ AI Career Roadmap Generator
+
+Generate a personalized roadmap based on:
+
+- Current skills
+- Target career role
+
+Outputs:
+
+- Learning path
+- Recommended technologies
+- Suggested progression plan
+
+---
+
+## 🎤 AI Mock Interview
+
+Practice interview preparation with AI-generated questions.
+
+Features:
+
+- Role-specific questions
+- AI answer evaluation
+- Interview feedback
+- Downloadable feedback reports
+
+Supported Roles:
+
+- AI Engineer
+- Data Scientist
+- Software Engineer
+
+---
+
+## 📄 AI Cover Letter Generator
+
+Generate professional cover letters using:
+
+- Resume content
+- Job description
+
+Features:
+
+- Personalized content
+- ATS-friendly format
+- Downloadable cover letters
 
 ---
 
 # 🛠 Tech Stack
 
 ## Frontend
+
 - Streamlit
 
 ## Backend
+
 - Python
 
-## AI / ML
-- Scikit-learn
+## AI & Machine Learning
+
+- Gemini AI
+- Scikit-Learn
 - NLP
-- Gemini API (Google AI)
+- TF-IDF Vectorization
+- Cosine Similarity
 
-## Libraries Used
+---
 
+# 📚 Libraries Used
+
+- streamlit
 - pdfplumber
-- re
 - scikit-learn
 - google-genai
-- streamlit
+- numpy
+- pandas
+- re
 
 ---
 
@@ -64,47 +154,50 @@ AI-Career-Assistant/
 │
 ├── modules/
 │   ├── chatbot.py
-│   └── recommender.py
+│   ├── recommender.py
+│   ├── jd_matcher.py
+│   ├── skill_gap.py
+│   ├── roadmap.py
+│   ├── interview.py
+│   ├── interview_evaluator.py
+│   └── cover_letter.py
 │
 ├── requirements.txt
+│
 ├── README.md
+│
 └── .streamlit/
+    └── secrets.toml
 ```
 
 ---
 
 # ⚙️ Installation
 
-## 1️⃣ Clone Repository
+## 1. Clone Repository
 
 ```bash
-git clone https://github.com/SakshiG13arg/AI-Resume-Analyzer.git
+git clone https://github.com/yourusername/AI-Career-Assistant.git
 ```
 
-## 2️⃣ Open Project Folder
+## 2. Open Project Directory
 
 ```bash
 cd AI-Career-Assistant
 ```
 
-## 3️⃣ Install Dependencies
+## 3. Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-## 4️⃣ Add Gemini API Key
+## 4. Add Gemini API Key
 
-Create folder:
-
-```text
-.streamlit
-```
-
-Inside it create:
+Create:
 
 ```text
-secrets.toml
+.streamlit/secrets.toml
 ```
 
 Add:
@@ -115,7 +208,7 @@ GEMINI_API_KEY = "your_api_key_here"
 
 ---
 
-# ▶️ Run Project
+# ▶️ Run Application
 
 ```bash
 streamlit run app.py
@@ -127,32 +220,11 @@ streamlit run app.py
 
 - TF-IDF Vectorization
 - Cosine Similarity
-- NLP-based skill extraction
-- AI Prompt Engineering
+- Resume Matching
+- Skill Extraction
 - Recommendation Systems
-
----
-
-# 📊 Example Features
-
-✅ Resume Score Analysis  
-✅ Skill Detection  
-✅ AI Career Guidance  
-✅ Job Recommendations  
-✅ Resume Improvement Suggestions  
-
----
-
-# 🚀 Future Improvements
-
-- Resume Ranking System
-- User Authentication
-- Database Integration
-- Vector Database
-- LangChain Integration
-- OpenCV Features
-- Interview Preparation Module
-- Resume Builder
+- Prompt Engineering
+- NLP-Based Text Processing
 
 ---
 
@@ -160,22 +232,42 @@ streamlit run app.py
 
 This project demonstrates:
 
-- AI integration in web apps
-- Machine Learning implementation
-- NLP concepts
-- Recommendation systems
-- LLM integration
-- Streamlit deployment
-- Modular Python architecture
+- Artificial Intelligence Integration
+- Generative AI Applications
+- Resume Parsing
+- Recommendation Systems
+- NLP Techniques
+- Streamlit Development
+- Modular Python Architecture
+- Career Guidance Automation
+
+---
+
+# 🚀 Future Enhancements
+
+- User Authentication
+- Resume Ranking System
+- Database Integration
+- Vector Database Support
+- LangChain Integration
+- RAG-based Career Assistant
+- Resume Builder
+- Interview Analytics Dashboard
+- Job Scraping Integration
+- Real-Time Job Listings
 
 ---
 
 # 👨‍💻 Author
 
-Sakshi Garg
+**Sakshi Garg**
+
+B.Tech (Electronics & Communication Engineering)
+
+Passionate about AI, Machine Learning, and Software Development.
 
 ---
 
-# ⭐ If You Like This Project
+# ⭐ Support
 
-Give it a star on GitHub ⭐
+If you found this project useful, consider giving it a ⭐ on GitHub.
