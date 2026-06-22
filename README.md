@@ -141,7 +141,6 @@ Features:
 - google-genai
 - numpy
 - pandas
-- re
 
 ---
 
@@ -163,11 +162,10 @@ AI-Career-Assistant/
 │   └── cover_letter.py
 │
 ├── requirements.txt
-│
 ├── README.md
+├── .gitignore
 │
 └── .streamlit/
-    └── secrets.toml
 ```
 
 ---
@@ -194,16 +192,31 @@ pip install -r requirements.txt
 
 ## 4. Add Gemini API Key
 
-Create:
+Create a local file:
 
 ```text
 .streamlit/secrets.toml
 ```
 
-Add:
+Add the following:
 
 ```toml
 GEMINI_API_KEY = "your_api_key_here"
+```
+
+⚠️ Important:
+
+- Do NOT upload `secrets.toml` to GitHub.
+- Add it to `.gitignore`.
+- Keep your API key private.
+
+Example `.gitignore`:
+
+```gitignore
+.streamlit/secrets.toml
+__pycache__/
+*.pyc
+.env
 ```
 
 ---
@@ -253,7 +266,6 @@ This project demonstrates:
 - RAG-based Career Assistant
 - Resume Builder
 - Interview Analytics Dashboard
-- Job Scraping Integration
 - Real-Time Job Listings
 
 ---
